@@ -6,6 +6,13 @@ body {
 	height: 100%;
 }
 
+.header {
+	margin: 20px;
+    line-height: 1.5;
+    background-color:#FDF2E9;
+    font-size: 1em;
+}
+
 .row {
     display: flex;
     width: 100%;
@@ -53,6 +60,8 @@ body {
 
 
 /* Split the screen in half */
+
+/*
 .split {
   height: 100%;
   width: 50%;
@@ -62,6 +71,8 @@ body {
   overflow-x: hidden;
   padding-top: 20px;
 }
+
+*/
 
 /* Control the left side */
 .left {
@@ -76,6 +87,7 @@ body {
 }
 
 /* If you want the content centered horizontally and vertically */
+/*
 .centered {
   position: absolute;
   top: 50%;
@@ -83,6 +95,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+*/
 
 /* Style the image inside the centered container, if needed */
 .centered img {
