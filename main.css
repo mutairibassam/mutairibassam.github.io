@@ -1,19 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
+ * {
+	 margin: 0;
+	 padding: 0;
+}
 
 body {
     background: black;
-    height: 85vh;
     width: 100%;
     margin: 0px;
     padding: 0px;
+}
+
+.header {
+    height: 45vh;
     display: grid;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
 }
 
+#container {
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.menu .menu-item {
+    margin: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .menu-item p {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s linear;
+    color: #fff;
+}
+.menu .menu-item .elem {
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+.menu .menu-item:hover .par:nth-child(1) {
+    animation-delay: 0.12s;
+}
+.menu .menu-item:hover .par:nth-child(2) {
+    animation-delay: 0.24s;
+}
+.menu .menu-item:hover .par:nth-child(3) {
+    animation-delay: 0.36s;
+}
+.menu .menu-item:hover .par:nth-child(4) {
+    animation-delay: 0.48s;
+}
+.menu .menu-item:hover .par:nth-child(5) {
+    animation-delay: 0.6s;
+}
+.menu .menu-item:hover .par:nth-child(6) {
+    animation-delay: 0.72s;
+}
+.menu .menu-item:hover .par {
+    animation: opacPar 0.2s linear;
+}
+.menu .menu-item:hover .elem {
+    animation: opacElem 0.84s linear forwards;
+}
+@keyframes opacPar {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+   }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+   }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+   }
+}
+@keyframes opacElem {
+    0% {
+        opacity: 1;
+   }
+    10% {
+        opacity: 0;
+   }
+    95% {
+        opacity: 0;
+   }
+    99% {
+        opacity: 0;
+   }
+    100% {
+        opacity: 1;
+        text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff;
+        -webkit-text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff;
+        -ms-text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff;
+   }
+}
+
+
 .ring {
-    position: relative;
+    position: absolute;
     width: 0px;
     height: 0px;
     background: red;
@@ -22,8 +119,8 @@ body {
 }
 .ring .particle {
     position: absolute;
-    width: 3px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
     border-radius: 100%;
     opacity: 0;
 }
