@@ -5,10 +5,34 @@
 }
 
 body {
-    background: black;
+    background: rgb(255, 255, 255);
     width: 100%;
     margin: 0px;
     padding: 0px;
+}
+
+@-webkit-keyframes typing {
+    from {
+         width: 0; 
+       } 
+   }
+@-webkit-keyframes blink-caret {
+    50%
+     {
+          border-color: transparent; 
+       }
+    }
+    
+.text { 
+	font: bold 100% Consolas, Monaco, monospace;
+	border-right: .1em solid rgb(0, 0, 0);
+	width: 23.5em; 
+	width: 23ch;
+	margin: 1em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 10s steps(23, end),
+	           blink-caret .5s step-end infinite alternate;
 }
 
 .header {
@@ -19,9 +43,6 @@ body {
     overflow: hidden;
 }
 
-#container {
-    overflow: hidden;
-}
 
 .menu {
     display: flex;
@@ -42,12 +63,12 @@ body {
 .menu .menu-item p {
     position: absolute;
     opacity: 0;
-    transition: all 0.2s linear;
-    color: #fff;
+    transition: all 1.2s linear;
+    color: rgb(0, 0, 0);
 }
 .menu .menu-item .elem {
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 1.2s linear;
 }
 .menu .menu-item:hover .par:nth-child(1) {
     animation-delay: 0.12s;
