@@ -3,7 +3,7 @@ body {
     padding: 0px;
     display: grid;
     justify-content: center;
-	background-color: #283c4f;
+	  background-color: #283c4f;
 }
 
 p {
@@ -222,12 +222,14 @@ section h1 {
 
 .text_body {
   position: absolute;
-  width: 450px;
-  margin-left: -525px;
-  top: 10%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 40px;
+  font-weight: bolder;
   color: white;
 }
 
@@ -239,7 +241,7 @@ p {
 
 .word {
   position: absolute;
-  width: 220px;
+  width: 950px;
   opacity: 0;
 }
 
@@ -270,7 +272,7 @@ p {
 }
 
 .belize {
-  color: #9a72eb;
+  color: #ffe734;
 }
 
 .pomegranate {
