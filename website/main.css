@@ -276,30 +276,104 @@ color: #2980b9;
 
 /* ------------------------------------------------- */
 
-.android_card {
-  height:400px;
-  width: 300px;
-  background-color:rgb(255, 132, 0);
+.card {
+  height:200px;
+  width: 200px;
   position: absolute;
   top: 60%;
-  z-index: 2;
-  transform: translate(30%, -50%);
   margin: 0;
   padding: 10px;
   border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3); 
+  box-shadow: -11px 11px 11px 11px rgba(0, 0, 0, 0.3); 
+  background-color: rgb(215, 215, 215);
 }
 
-.data_card {
-  height:400px;
-  width: 300px;
-  background-color:white;
+.git {
+  transform: translate(-70%, -50%);
+}
+
+.data {
+  transform: translate(50%, -50%);
+}
+
+.android {
+ 
+  transform: translate(-200%, -50%); 
+}
+
+.flutter {
+  transform: translate(180%, -50%);  
+}
+
+.title {
+  font-size: 20pt;
+  margin: 5px;
+  padding: 5px;
+  font-weight: lighter;
+  color: black;
+  opacity: 20%;
+}
+
+.coming_soon {
+ font-size: 12pt;
+ padding: 5px;
+ font-weight: thin;
+ color: white;
+ text-align: center;
+ font-family: 'Open Sans', sans-serif;
+
+}
+
+.circle {
+  opacity: 80%;
+  background-color:rgb(0, 157, 255);
   position: absolute;
-  top: 60%;
-  z-index: 2;
-  transform: translate(-80%, -50%);
-  margin: 0; 
-  padding: 10px;
+  top: 45%;
+  width: 130px;
+  height: 30px;
+  margin: 5px; 
+  margin-left: 30px;
+  padding: 4px;
   border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3); 
+  /* box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);  */
+}
+
+.available {
+  font-size: 26pt;
+  margin: 5px;
+  padding: 5px;
+  font-weight: lighter;
+  color: black;
+  text-align: center;
+ 
+}
+
+.register_shape {
+  background-color:teal;
+  position: absolute;
+  top: 45%;
+  width: 130px;
+  height: 30px;
+  margin: 5px; 
+  margin-left: 30px;
+  padding: 4px;
+  border-radius: 25px;
+}
+
+.register {
+  font-size: 12pt;
+  padding: 5px;
+  font-weight: thin;
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.more {
+  font-size: 12px;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+  margin: 5px;
+  padding: 5px;
 }
