@@ -2,6 +2,10 @@ var words = document.getElementsByClassName('word');
 var wordArray = [];
 var currentWord = 0;
 
+function nav_android() {
+  window.open("https://mutairibassam.github.io/beat-android.html");
+}
+
 words[currentWord].style.opacity = 1;
 for (var i = 0; i < words.length; i++) {
   splitLetters(words[i]);
@@ -51,4 +55,5 @@ function splitLetters(word) {
 }
 
 changeWord();
-setInterval(changeWord, 4000);
+setInterval(changeWord, 2000);
+
