@@ -232,11 +232,18 @@ font-weight: bolder;
 
 .word {
 position:absolute;
--webkit-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
+-webkit-transform: translate(-5%, -50%);
 width: 400px;
-font-size: 60pt;
+font-size: 40pt;
 opacity: 0;
+}
+
+.word_learn {
+  position:absolute;
+  -webkit-transform: translate(-75%, -50%);
+  width: 400px;
+  font-size: 40pt;
+  color: white;
 }
 
 .letter {
@@ -373,7 +380,13 @@ color: #2980b9;
   font-size: 12px;
   position: absolute;
   top: 85%;
-  left: 45%;
   margin: 5px;
   padding: 5px;
+  cursor: pointer;
+}
+
+.more:hover {
+  background-color:rgb(0, 157, 255); 
+  border-radius: 25px;
+  color: white;
 }
