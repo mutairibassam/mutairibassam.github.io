@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Soon() {
     return (
         <div>
         <main className={styles.main}>
@@ -14,4 +14,5 @@ export default function Home() {
             </p>
         </main>
         </div>
-    )}
+    )
+}
