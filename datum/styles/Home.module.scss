@@ -1,3 +1,5 @@
+$primary_color: teal;
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -34,14 +36,15 @@
 }
 
 .title span {
-  color: teal;
+  color: $primary_color; 
+  text-decoration: none;
 }
 
-/* .title a:hover,
+.title a:hover,
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-} */
+}
 
 .title {
   margin: 0;
@@ -56,7 +59,7 @@
 
 .description {
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .code {
@@ -92,9 +95,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  /* color: #0070f3; */
-  color: teal;
-  border-color: teal;
+  color: $primary_color;
+  border-color: $primary_color;
 }
 
 .card h2 {
@@ -104,7 +106,7 @@
 
 .card p {
   margin: 0;
-  font-size: 1.00rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
