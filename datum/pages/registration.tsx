@@ -26,6 +26,15 @@ export default function Registration() {
               </div>
 
               <input placeholder="Email" className={styles.field_input}></input>
+
+              <div className={styles.category}>
+                <label>Program name:</label>
+              </div>
+              <input
+                placeholder="Program name"
+                className={styles.field_input}
+              ></input>
+
               <div>
                 <button className={styles.submit}>Submit</button>
               </div>
