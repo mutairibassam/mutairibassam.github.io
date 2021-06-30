@@ -4,6 +4,8 @@
 
 _static/
 
+.prettierrc
+
 ### Node ###
 # Logs
 logs
