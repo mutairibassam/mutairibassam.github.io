@@ -54,7 +54,7 @@ export default function Home() {
 
         <Link href="/registration">
           <a className={styles.reg_btn} >
-            <p>Register?</p>
+            <p>wanna join?</p>
           </a>
         </Link>
 
