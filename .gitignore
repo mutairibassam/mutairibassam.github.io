@@ -5,6 +5,7 @@
 _static/
 
 .prettierrc
+.faunarc
 
 ### Node ###
 # Logs
