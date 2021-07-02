@@ -6,6 +6,7 @@ _static/
 
 .prettierrc
 .faunarc
+.vscode
 
 ### Node ###
 # Logs
