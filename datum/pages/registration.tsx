@@ -7,27 +7,29 @@ import { useRouter } from "next/router";
 // import { createUser } from "../../../Faunadb";
 
 export default function Registration() {
-  
   /**
-   * 
+   *
    * */
-  const { register, handleSubmit, formState: { errors  } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-  const createUser = async (data) => {
+  const createUser = async (data: any) => {
     const { name, email, program } = data;
     console.log("data", data);
 
     try {
-      await fetch('/api/createUser', {
-        method: 'POST',
-        body: JSON.stringify({name, email, program}),
+      await fetch("/api/createUser", {
+        method: "POST",
+        body: JSON.stringify({ name, email, program }),
         headers: {
-          'Content-Type': 'application/json',
-        } 
-      })
-    }
-    catch (err) {
-      console.log(err)
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (err) {
+      console.log(err);
     }
   };
 
@@ -46,21 +48,19 @@ export default function Registration() {
             <form onSubmit={handleSubmit(createUser)}>
               <div className={styles.category}>
                 <label>Full Name:</label>
-                {errors.name && ( <span className={styles.mandatory}>*</span>)} 
+                {errors.name && <span className={styles.mandatory}>*</span>}
               </div>
               <input
                 placeholder="Name"
                 className={styles.field_input}
-                // ref={register}
                 {...register("name", {
                   required: "Required",
-                })}                
+                })}
               />
 
               <div className={styles.category}>
                 <label>Email:</label>
-                {errors.email && ( <span className={styles.mandatory}>*</span>)}
-
+                {errors.email && <span className={styles.mandatory}>*</span>}
               </div>
 
               <input
@@ -69,13 +69,12 @@ export default function Registration() {
                 className={styles.field_input}
                 {...register("email", {
                   required: "Required",
-                })}    
+                })}
               ></input>
-
 
               <div className={styles.category}>
                 <label>Program name:</label>
-                {errors.program && ( <span className={styles.mandatory}>*</span>)}
+                {errors.program && <span className={styles.mandatory}>*</span>}
               </div>
               <input
                 type="text"
@@ -84,7 +83,7 @@ export default function Registration() {
                 className={styles.field_input}
                 {...register("program", {
                   required: "Required",
-                })}    
+                })}
               ></input>
 
               <div>
