@@ -4,7 +4,6 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-// import { createUser } from "../../../Faunadb";
 
 export default function Registration() {
   /**
@@ -64,7 +63,6 @@ export default function Registration() {
               </div>
 
               <input
-                // onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
                 className={styles.field_input}
                 {...register("email", {
@@ -79,7 +77,6 @@ export default function Registration() {
               <input
                 type="text"
                 placeholder="Program name"
-                // onChange={(e) => setProgram(e.target.value)}
                 className={styles.field_input}
                 {...register("program", {
                   required: "Required",
