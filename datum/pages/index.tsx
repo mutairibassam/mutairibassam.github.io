@@ -29,27 +29,21 @@ export default function Home() {
           </a>
 
           <Link href="/soon">
-          <a 
-          className={styles.card}
-          >
+          <a className={styles.card} >
             <h2>Beat-data &rarr;</h2>
             <p>Learn how gather, assess, and visualize your data!</p>
           </a>
           </Link>
           
           <Link href="/soon">
-          <a
-            className={styles.card}
-          >
+          <a className={styles.card}>
             <h2>Beat-git &rarr;</h2>
             <p>Control your projects, and learn how to contribute to open-source</p>
           </a>
           </Link>
 
           <Link href="/soon">
-          <a
-            className={styles.card}
-          >
+          <a className={styles.card}>
             <h2>Beat-flutter &rarr;</h2>
             <p>
               Develop cross platform applications from single codebase
@@ -57,13 +51,21 @@ export default function Home() {
           </a>
           </Link> 
         </div>
+
+        <Link href="/registration">
+          <a className={styles.reg_btn} >
+            <p>wanna join?</p>
+          </a>
+        </Link>
+
       </main>
 
       <footer className={styles.footer}>
-        <a>
+        <p>
           Powered by datum
-        </a>
+        </p>
       </footer>
+
     </div>
   )
 }

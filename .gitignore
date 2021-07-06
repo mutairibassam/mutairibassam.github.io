@@ -4,6 +4,12 @@
 
 _static/
 
+.prettierrc
+.faunarc
+.vscode
+.env.development
+.env.production
+
 ### Node ###
 # Logs
 logs
