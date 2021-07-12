@@ -24,6 +24,10 @@ export default function Registration() {
           "Content-Type": "application/json",
         },
       });
+
+      alert(
+        "Your details has been sent to the resposible team. The responsible team will contact you"
+      );
     } catch (err) {
       console.log(err);
     }
