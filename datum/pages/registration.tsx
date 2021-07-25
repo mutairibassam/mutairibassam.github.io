@@ -1,9 +1,7 @@
 import styles from "../styles/Registration.module.scss";
 import Link from "next/link";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
-import { useRouter } from "next/router";
 
 export default function Registration() {
   const {
