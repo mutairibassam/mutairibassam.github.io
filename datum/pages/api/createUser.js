@@ -1,4 +1,4 @@
-import { addUsers } from '../../../Faunadb';
+import { addUsers } from '../../Faunadb';
 
 export default async function handler(req, res) {
     const { name, email, program } = req.body;
