@@ -21,9 +21,9 @@ const addUsers = async (name, email, program) => {
 };
 
 // Test api
-app.get("/test", async (req, res) => {
-  console.log("hala");
-});
+// app.get("/test", async (req, res) => {
+//   console.log("hala");
+// });
 
 app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
