@@ -44,6 +44,9 @@ $primary_color: teal;
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  font-weight: 100;
+  font-family: system-ui;
+  border: none;
 }
 
 .code {
@@ -103,7 +106,8 @@ $primary_color: teal;
   padding: 10px;
   align-self: start;
   font-size: 1.5rem;
-  background-color: white;
+  color: black;
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {

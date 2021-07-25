@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
-import Link from 'next/link'
+import Head from "next/head";
+import styles from "../styles/Home.module.scss";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,57 +15,52 @@ export default function Home() {
           Welcome to, <span>datum!</span>
         </h1>
 
-        <p className={styles.description}>
-          WE FILL THE GAPS
-        </p>
+        <p className={styles.description}>WE FILL THE GAPS</p>
 
         <div className={styles.grid}>
-        <a 
-          href="https://github.com/mutairibassam/mutairibassam.github.io/blob/master/beat-android.md" 
-          className={styles.card}
+          <a
+            href="https://github.com/mutairibassam/mutairibassam.github.io/blob/master/beat-android.md"
+            className={styles.card}
           >
             <h2>Beat-android &rarr;</h2>
             <p>Build a variety of apps, using the Java programming language.</p>
           </a>
 
           <Link href="/soon">
-          <a className={styles.card} >
-            <h2>Beat-data &rarr;</h2>
-            <p>Learn how gather, assess, and visualize your data!</p>
-          </a>
-          </Link>
-          
-          <Link href="/soon">
-          <a className={styles.card}>
-            <h2>Beat-git &rarr;</h2>
-            <p>Control your projects, and learn how to contribute to open-source</p>
-          </a>
+            <a className={styles.card}>
+              <h2>Beat-data &rarr;</h2>
+              <p>Learn how gather, assess, and visualize your data!</p>
+            </a>
           </Link>
 
           <Link href="/soon">
-          <a className={styles.card}>
-            <h2>Beat-flutter &rarr;</h2>
-            <p>
-              Develop cross platform applications from single codebase
-            </p>
-          </a>
-          </Link> 
+            <a className={styles.card}>
+              <h2>Beat-git &rarr;</h2>
+              <p>
+                Control your projects, and learn how to contribute to
+                open-source
+              </p>
+            </a>
+          </Link>
+
+          <Link href="/soon">
+            <a className={styles.card}>
+              <h2>Beat-flutter &rarr;</h2>
+              <p>Develop cross platform applications from single codebase</p>
+            </a>
+          </Link>
         </div>
 
         <Link href="/registration">
-          <a className={styles.reg_btn} >
-            <p>wanna join?</p>
+          <a className={styles.reg_btn}>
+            <p>Join us</p>
           </a>
         </Link>
-
       </main>
 
       <footer className={styles.footer}>
-        <p>
-          Powered by datum
-        </p>
+        <p>Powered by datum</p>
       </footer>
-
     </div>
-  )
+  );
 }
