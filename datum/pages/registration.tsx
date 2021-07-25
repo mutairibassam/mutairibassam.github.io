@@ -6,9 +6,6 @@ import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 
 export default function Registration() {
-  /**
-   *
-   * */
   const {
     register,
     handleSubmit,
@@ -27,9 +24,23 @@ export default function Registration() {
           "Content-Type": "application/json",
         },
       });
+
+      alert(
+        "Your details has been sent to the resposible team. The responsible team will contact you"
+      );
     } catch (err) {
       console.log(err);
     }
+
+    // let _name = (document.getElementById("name_id") as HTMLInputElement).value;
+
+    /**
+     *    Clear user input
+     *
+     */
+    (document.getElementById("name_id") as HTMLInputElement).value = "";
+    (document.getElementById("email_id") as HTMLInputElement).value = "";
+    (document.getElementById("program_id") as HTMLInputElement).value = "";
   };
 
   return (
@@ -50,6 +61,7 @@ export default function Registration() {
                 {errors.name && <span className={styles.mandatory}>*</span>}
               </div>
               <input
+                id="name_id"
                 placeholder="Name"
                 className={styles.field_input}
                 {...register("name", {
@@ -63,6 +75,7 @@ export default function Registration() {
               </div>
 
               <input
+                id="email_id"
                 placeholder="Email"
                 className={styles.field_input}
                 {...register("email", {
@@ -75,7 +88,7 @@ export default function Registration() {
                 {errors.program && <span className={styles.mandatory}>*</span>}
               </div>
               <input
-                type="text"
+                id="program_id"
                 placeholder="Program name"
                 className={styles.field_input}
                 {...register("program", {
