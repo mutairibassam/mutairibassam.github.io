@@ -137,3 +137,32 @@ $primary_color: teal;
     }
   }
 }
+
+@media screen and (max-width: 350px) {
+  .container {
+    .main {
+      margin-top: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      font-size: large;
+    }
+    .description {
+      font-size: small;
+    }
+    .card {
+      width: 100%;
+    }
+    .card h2 {
+      font-size: medium;
+    }
+    .card p {
+      font-size: x-small;
+    }
+    .reg_btn {
+      align-self: center;
+      font-size: medium;
+    }
+  }
+}
