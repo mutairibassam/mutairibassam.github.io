@@ -110,9 +110,30 @@ $primary_color: teal;
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media screen and (max-width: 600px) {
+  .container {
+    .main {
+      margin-top: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      font-size: xx-large;
+    }
+    .description {
+      font-size: medium;
+    }
+    .card {
+      width: 100%;
+    }
+    .card h2 {
+      font-size: large;
+    }
+    .card p {
+      font-size: medium;
+    }
+    .reg_btn {
+      align-self: center;
+    }
   }
 }
