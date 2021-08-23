@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Support() {
   return (
-    <div>
+    <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>You will never be late</h1>
         <p className={styles.description}>Book a slot</p>

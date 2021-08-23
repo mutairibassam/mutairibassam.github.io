@@ -109,9 +109,7 @@ $primary_color: teal;
 @media screen and (max-width: 600px) {
   .container {
     .main {
-      margin-top: 500px;
-      display: flex;
-      flex-direction: column;
+      margin: 15px;
     }
     .title {
       font-size: xx-large;
@@ -123,10 +121,13 @@ $primary_color: teal;
       width: 100%;
     }
     .card h3 {
-      font-size: small;
+      font-size: medium;
     }
-    .card p {
+    .rules_section {
       font-size: small;
+      li {
+        margin-top: 5px;
+      }
     }
   }
 }
@@ -134,9 +135,7 @@ $primary_color: teal;
 @media screen and (max-width: 350px) {
   .container {
     .main {
-      margin-top: 500px;
-      display: flex;
-      flex-direction: column;
+      margin: 15px;
     }
     .title {
       font-size: large;
@@ -145,13 +144,17 @@ $primary_color: teal;
       font-size: small;
     }
     .card {
-      width: 100%;
+      padding: 15px;
+      text-align: -webkit-center;
     }
-    .card h2 {
-      font-size: small;
+    .card h3 {
+      font-size: xx-small;
     }
-    .card p {
+    .rules_section {
       font-size: x-small;
+      li {
+        margin-top: 5px;
+      }
     }
   }
 }
