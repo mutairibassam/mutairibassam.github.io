@@ -10,7 +10,7 @@ export default function Support() {
 
         <div>
           <div className={styles.main_container}>
-            <p>Select your instructors</p>
+            <p>Select your instructor</p>
             <div className={styles.body_container}>
               <div className={styles.grid}>
                 <a
