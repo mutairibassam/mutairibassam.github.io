@@ -20,7 +20,6 @@ $primary_color: teal;
 }
 
 .title span {
-  color: $primary_color;
   text-decoration: none;
 }
 
@@ -33,7 +32,7 @@ $primary_color: teal;
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
@@ -49,13 +48,17 @@ $primary_color: teal;
   border: none;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.main_container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  p {
+    margin: 0;
+  }
+}
+
+.body_container {
+  display: flex;
+  margin-top: 20px;
 }
 
 .grid {
@@ -64,11 +67,10 @@ $primary_color: teal;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-  margin-top: 3rem;
 }
 
 .card {
-  margin: 1rem;
+  margin-right: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -76,7 +78,7 @@ $primary_color: teal;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  width: fit-content;
 }
 
 .card:hover,
@@ -87,32 +89,21 @@ $primary_color: teal;
   background-color: $primary_color;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.card h3 {
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.reg_btn {
-  font-weight: 100;
-  font-family: system-ui;
-  border: none;
-  margin-left: 17px;
-  padding: 5px;
-  align-self: start;
   font-size: 1.5rem;
-  color: black;
-  text-decoration: underline;
 }
 
-.bottom_grid {
-  display: flex;
-  align-self: start;
+.rules_section li span {
+  color: red;
+  text-decoration: solid;
+}
+
+.btn_back {
+  p {
+    text-decoration: underline;
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -131,17 +122,11 @@ $primary_color: teal;
     .card {
       width: 100%;
     }
-    .card h2 {
-      font-size: large;
+    .card h3 {
+      font-size: small;
     }
     .card p {
-      font-size: medium;
-    }
-    .reg_btn {
-      align-self: center;
-    }
-    .reg_btn {
-      align-self: center;
+      font-size: small;
     }
   }
 }
@@ -163,14 +148,10 @@ $primary_color: teal;
       width: 100%;
     }
     .card h2 {
-      font-size: medium;
+      font-size: small;
     }
     .card p {
       font-size: x-small;
-    }
-    .reg_btn {
-      align-self: center;
-      font-size: medium;
     }
   }
 }
