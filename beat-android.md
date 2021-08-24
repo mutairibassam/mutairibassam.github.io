@@ -37,9 +37,9 @@ In this program you will learn android programming concepts and build a variety 
 
 - You need to pass a simple programming assessment in Java.
 
-> in case you didn't pass or you want to improve your programming skills please send us an email at `mutairibassam@gmail.com` to give you a special program.
+> in case you didn't pass or you want to improve your programming skills please send us an email at `datum.assist@gmail.com` to give you a special program.
 
-For any additional clarifications please contact me at `mutairibassam@gmail.com`
+For any additional clarifications please contact me at `datum.assist@gmail.com`
 
 ---
 
