@@ -51,11 +51,19 @@ export default function Home() {
           </Link>
         </div>
 
-        <Link href="/registration">
-          <a className={styles.reg_btn}>
-            <p>Join us</p>
-          </a>
-        </Link>
+        <div className={styles.bottom_grid}>
+          <Link href="/registration">
+            <a className={styles.reg_btn}>
+              <p>Join us</p>
+            </a>
+          </Link>
+
+          <Link href="/support">
+            <a className={styles.reg_btn}>
+              <p>Support</p>
+            </a>
+          </Link>
+        </div>
       </main>
 
       <footer className={styles.footer}>
