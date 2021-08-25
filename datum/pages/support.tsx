@@ -30,27 +30,37 @@ export default function Support() {
                 </a>
               </div>
             </div>
+            <div className={styles.review}>
+              <p>
+                Had a session? please{" "}
+                <a href="https://forms.gle/LtJdmcRF9PAo4Wiz7">review</a>
+              </p>
+            </div>
           </div>
+
           <div className={styles.rules_section}>
             <p className={styles.rules}>Rules</p>
             <ul>
               <li>
                 Attendance is a must, otherwise, you will get
                 <span> NO SHOW.</span>{" "}
-                <i>(you will be suspended if you have 3 times)</i>
+                <i>(3 No show will lead to suspension)</i>
               </li>
               <li>
                 Specify your needs by typing in the subject.{" "}
                 <i>(teaching, debugging, open discussion)</i>
               </li>
-              <li>Briefly describe your challenge.</li>
-              <li>Session evalution is required.</li>
+              <li>Briefly describe your needs.</li>
+              <li>
+                Session evalution is required, otherwise, you will be suspended.
+              </li>
               <li>
                 Any cancellation or reschedule should be made at least one hour
                 in advance.
               </li>
             </ul>
           </div>
+
           <Link href="/">
             <a className={styles.btn_back}>
               <p> Back </p>
