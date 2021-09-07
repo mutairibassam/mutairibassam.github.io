@@ -10,6 +10,8 @@ export default function Registration() {
     formState: { errors },
   } = useForm();
 
+  // program selection should be drop down instead of free text
+
   const createUser = async (data: any) => {
     const { name, email, program } = data;
     console.log("data", data);
