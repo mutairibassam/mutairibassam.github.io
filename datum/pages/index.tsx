@@ -1,6 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
+// import {
+//   Document, Page,
+// } from 'react-pdf/dist/esm/entry.webpack';
+
+// import beatFile from "../public/beat"
 
 export default function Home() {
   return (
@@ -18,10 +23,7 @@ export default function Home() {
         <p className={styles.description}>WE FILL THE GAPS</p>
 
         <div className={styles.grid}>
-          <a
-            href="https://github.com/mutairibassam/mutairibassam.github.io/blob/master/beat-android.md"
-            className={styles.card}
-          >
+          <a href="android" className={styles.card}>
             <h2>Beat-android &rarr;</h2>
             <p>Build a variety of apps, using the Java programming language.</p>
           </a>
