@@ -26,7 +26,7 @@ export default function Registration() {
       });
 
       alert(
-        "Your details has been sent to the resposible team. The responsible team will contact you"
+        "Your details has been sent to the resposible team. The responsible team will contact you soon"
       );
     } catch (err) {
       console.log(err);
@@ -57,7 +57,7 @@ export default function Registration() {
 
             <form onSubmit={handleSubmit(createUser)}>
               <div className={styles.category}>
-                <label>Full Name:</label>
+                <label>Full name:</label>
                 {errors.name && <span className={styles.mandatory}>*</span>}
               </div>
               <input
