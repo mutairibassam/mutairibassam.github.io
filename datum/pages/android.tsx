@@ -77,6 +77,12 @@ export default function Android() {
             </ul>
           </div>
 
+          <div className={styles.rules_section}>
+            <p className={styles.rules}>
+              <span>you can reach us via `datum.assist@gmail.com`</span>
+            </p>
+          </div>
+
           <div className={styles.bottom_grid}>
             <Link href="/registration">
               <a className={styles.reg_btn}>

@@ -69,6 +69,15 @@ $primary_color: teal;
   align-self: start;
 }
 
+.rules_section p {
+  margin-top: 5px;
+
+  span {
+    color: gray;
+    text-decoration: solid;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .container {
     display: contents;

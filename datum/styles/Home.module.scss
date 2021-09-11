@@ -110,9 +110,12 @@ $primary_color: teal;
   text-decoration: underline;
 }
 
-.bottom_grid {
-  display: flex;
-  align-self: start;
+.rules_section li {
+  margin-top: 5px;
+  span {
+    color: red;
+    text-decoration: solid;
+  }
 }
 
 @media screen and (max-width: 600px) {
