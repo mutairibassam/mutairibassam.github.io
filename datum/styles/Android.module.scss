@@ -4,8 +4,6 @@ $primary_color: teal;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
   height: 60vh;
 }
 
@@ -14,18 +12,16 @@ $primary_color: teal;
   flex: 1;
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
 }
 
 .body_borders {
   margin: 40px;
 }
 
-.title span {
-  color: $primary_color;
-  text-decoration: none;
-}
+// .title span {
+//   color: $primary_color;
+//   text-decoration: none;
+// }
 
 .title a:hover,
 .title a:focus,
@@ -34,6 +30,10 @@ $primary_color: teal;
 }
 
 .title {
+  span {
+    color: $primary_color;
+    text-decoration: none;
+  }
   margin-top: 50px;
   margin-left: 50px;
   line-height: 1.15;
@@ -78,23 +78,21 @@ $primary_color: teal;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 600px) {
   .container {
     display: contents;
-    .description {
-      font-size: larger;
-      margin-bottom: 50px;
+    .title {
+      font-size: xx-large;
     }
-    .category,
-    .submit {
-      font-size: smaller;
+    .main_container {
+      font-size: small;
+      text-align: justify;
     }
-    .field_input {
-      width: -webkit-fill-available;
-      // width: 250px;
+    .rules_section {
+      font-size: small;
     }
-    .box {
-      padding: 40px;
+    .reg_btn {
+      font-size: initial;
     }
   }
 }
