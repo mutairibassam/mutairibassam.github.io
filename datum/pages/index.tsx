@@ -18,10 +18,7 @@ export default function Home() {
         <p className={styles.description}>WE FILL THE GAPS</p>
 
         <div className={styles.grid}>
-          <a
-            href="https://github.com/mutairibassam/mutairibassam.github.io/blob/master/beat-android.md"
-            className={styles.card}
-          >
+          <a href="/android-v1.0.pdf" download className={styles.card}>
             <h2>Beat-android &rarr;</h2>
             <p>Build a variety of apps, using the Java programming language.</p>
           </a>
