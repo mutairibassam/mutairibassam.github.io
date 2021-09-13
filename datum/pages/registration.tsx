@@ -86,6 +86,9 @@ export default function Registration() {
               <div className={styles.category}>
                 <label>Program name:</label>
                 {errors.program && <span className={styles.mandatory}>*</span>}
+                <p className={styles.note}>
+                  *For future programs, we will contact you when it's ready
+                </p>
               </div>
               <input
                 id="program_id"

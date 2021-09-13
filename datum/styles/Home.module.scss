@@ -98,6 +98,11 @@ $primary_color: teal;
   line-height: 1.5;
 }
 
+.bottom_grid {
+  display: flex;
+  align-self: start;
+}
+
 .reg_btn {
   font-weight: 100;
   font-family: system-ui;
@@ -108,11 +113,6 @@ $primary_color: teal;
   font-size: 1.5rem;
   color: black;
   text-decoration: underline;
-}
-
-.bottom_grid {
-  display: flex;
-  align-self: start;
 }
 
 .rules_section li {
