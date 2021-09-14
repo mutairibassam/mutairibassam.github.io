@@ -13,7 +13,7 @@ $primary_color: teal;
 .main {
   padding: 5rem 0;
   flex: 1;
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -98,6 +98,11 @@ $primary_color: teal;
   line-height: 1.5;
 }
 
+.bottom_grid {
+  display: flex;
+  align-self: start;
+}
+
 .reg_btn {
   font-weight: 100;
   font-family: system-ui;
@@ -110,9 +115,33 @@ $primary_color: teal;
   text-decoration: underline;
 }
 
-.bottom_grid {
-  display: flex;
+.support_btn {
+  font-weight: 100;
+  font-family: system-ui;
+  border: none;
+  margin-left: 17px;
+  padding: 5px;
   align-self: start;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: underline;
+  margin-inline-end: auto;
+}
+
+.about_btn {
+  font-weight: 100;
+  margin-left: 17px;
+  padding: 3px;
+  color: white;
+  background-color: $primary_color;
+  border-radius: 30px;
+  align-self: center;
+  height: 50px;
+  width: 150px;
+  p {
+    text-align: center;
+    margin: 12px;
+  }
 }
 
 .rules_section li {
@@ -147,14 +176,24 @@ $primary_color: teal;
     }
     .reg_btn {
       align-self: center;
+      font-size: small;
     }
-    .reg_btn {
+    .support_btn {
       align-self: center;
+      font-size: small;
+    }
+    .about_btn {
+      align-self: center;
+      font-size: small;
+      margin-left: 90px;
+      color: black;
+      text-decoration: underline;
+      background-color: white;
     }
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 390px) {
   .container {
     .main {
       margin-top: 500px;
@@ -178,7 +217,19 @@ $primary_color: teal;
     }
     .reg_btn {
       align-self: center;
-      font-size: medium;
+      font-size: small;
+    }
+    .support_btn {
+      align-self: center;
+      font-size: small;
+    }
+    .about_btn {
+      align-self: center;
+      font-size: small;
+      margin-left: 60px;
+      color: black;
+      text-decoration: underline;
+      background-color: white;
     }
   }
 }
