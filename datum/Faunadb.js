@@ -25,9 +25,9 @@ const addUsers = async (name, email, program) => {
 //   console.log("hala");
 // });
 
-app.listen(port, () => {
-  console.log(`app listening at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`app listening at http://localhost:${port}`);
+// });
 
 module.exports = {
   addUsers,
