@@ -1,5 +1,5 @@
 $primary_color: teal;
-$bg_color: rgba(0, 128, 128, 0.305);
+$bg_color: rgba(0, 128, 128, 0.462);
 
 .container {
   min-height: 100vh;
@@ -57,7 +57,6 @@ $bg_color: rgba(0, 128, 128, 0.305);
   background-color: white;
   padding: 50px;
   border-radius: 15px;
-  box-shadow: 2px 2px 0.5px 0.5px gray;
 }
 
 .back {
@@ -66,11 +65,6 @@ $bg_color: rgba(0, 128, 128, 0.305);
     font-weight: 200;
     font-size: 1rem;
   }
-}
-
-.note {
-  font-size: xx-small;
-  color: rgb(89, 89, 89);
 }
 
 @media screen and (max-width: 600px) {
