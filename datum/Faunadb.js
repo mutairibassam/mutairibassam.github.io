@@ -1,6 +1,6 @@
-const express = require("express");
-const app = express();
-const port = 5000;
+// const express = require("express");
+// const app = express();
+// const port = 5000;
 
 const faunadb = require("faunadb");
 const client = new faunadb.Client({ secret: process.env.USERSDB_API_KEY });
