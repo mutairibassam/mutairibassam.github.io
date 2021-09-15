@@ -55,11 +55,7 @@ export default function Registration() {
             </Link>
             <p className={styles.description}>Registration form</p>
 
-            <form
-              onSubmit={handleSubmit(createUser)}
-              netlify-honeypot="bot-field"
-              data-netlify="true"
-            >
+            <form onSubmit={handleSubmit(createUser)}>
               <div className={styles.category}>
                 <label>Full name:</label>
                 {errors.name && <span className={styles.mandatory}>*</span>}
