@@ -106,7 +106,6 @@ $primary_color: teal;
 .reg_btn {
   font-weight: 100;
   font-family: system-ui;
-  border: none;
   margin-left: 17px;
   padding: 5px;
   align-self: start;
@@ -130,18 +129,11 @@ $primary_color: teal;
 
 .about_btn {
   font-weight: 100;
+  padding: 5px;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: underline;
   margin-left: 17px;
-  padding: 3px;
-  color: white;
-  background-color: $primary_color;
-  border-radius: 30px;
-  align-self: center;
-  height: 50px;
-  width: 150px;
-  p {
-    text-align: center;
-    margin: 12px;
-  }
 }
 
 .rules_section li {
@@ -176,16 +168,15 @@ $primary_color: teal;
     }
     .reg_btn {
       align-self: center;
-      font-size: small;
+      font-size: medium;
     }
     .support_btn {
       align-self: center;
-      font-size: small;
+      font-size: medium;
     }
     .about_btn {
       align-self: center;
-      font-size: small;
-      margin-left: 90px;
+      font-size: medium;
       color: black;
       text-decoration: underline;
       background-color: white;
@@ -217,19 +208,19 @@ $primary_color: teal;
     }
     .reg_btn {
       align-self: center;
-      font-size: small;
+      font-size: medium;
     }
     .support_btn {
       align-self: center;
-      font-size: small;
+      font-size: medium;
     }
     .about_btn {
       align-self: center;
-      font-size: small;
-      margin-left: 60px;
-      color: black;
-      text-decoration: underline;
-      background-color: white;
+      font-size: medium;
+      // margin-left: 60px;
+      // color: black;
+      // text-decoration: underline;
+      // background-color: white;
     }
   }
 }

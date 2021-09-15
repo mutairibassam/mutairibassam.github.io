@@ -64,7 +64,7 @@ export default function Home() {
           </Link>
 
           <a href="/datum-ar-v1.0.pdf" download className={styles.about_btn}>
-            <p>datum</p>
+            <p>what's datum?</p>
           </a>
         </div>
       </main>
