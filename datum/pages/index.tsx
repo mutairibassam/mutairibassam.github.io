@@ -63,7 +63,7 @@ export default function Home() {
             </a>
           </Link>
 
-          <a href="/datum-ar-v1.0.pdf" download className={styles.about_btn}>
+          <a href="/datum-ar-v1.1.pdf" download className={styles.about_btn}>
             <p>what's datum?</p>
           </a>
         </div>

@@ -184,7 +184,7 @@ $primary_color: teal;
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 360px) {
   .container {
     .main {
       margin-top: 500px;
@@ -192,10 +192,10 @@ $primary_color: teal;
       flex-direction: column;
     }
     .title {
-      font-size: large;
+      font-size: x-large;
     }
     .description {
-      font-size: small;
+      font-size: medium;
     }
     .card {
       width: 100%;
@@ -217,10 +217,6 @@ $primary_color: teal;
     .about_btn {
       align-self: center;
       font-size: medium;
-      // margin-left: 60px;
-      // color: black;
-      // text-decoration: underline;
-      // background-color: white;
     }
   }
 }
