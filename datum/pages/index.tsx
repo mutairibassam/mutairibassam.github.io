@@ -20,7 +20,7 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="/android-v1.0.pdf" download className={styles.card}>
+          <a href="/android-v1.1.pdf" download className={styles.card}>
             <h2>Beat-android &rarr;</h2>
             <p>Build a variety of apps, using the Java programming language.</p>
           </a>
@@ -63,8 +63,8 @@ export default function Home() {
             </a>
           </Link>
 
-          <a href="/datum-ar-v1.0.pdf" download className={styles.about_btn}>
-            <p>about datum</p>
+          <a href="/datum-ar-v1.1.pdf" download className={styles.about_btn}>
+            <p>what's datum?</p>
           </a>
         </div>
       </main>
