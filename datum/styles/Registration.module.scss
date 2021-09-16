@@ -1,5 +1,5 @@
 $primary_color: teal;
-$bg_color: rgba(0, 128, 128, 0.462);
+$bg_color: rgba(0, 128, 128, 0.305);
 
 .container {
   min-height: 100vh;
@@ -67,6 +67,17 @@ $bg_color: rgba(0, 128, 128, 0.462);
   }
 }
 
+.note {
+  font-size: xx-small;
+  color: rgb(89, 89, 89);
+}
+
+.msg {
+  font-size: medium;
+  margin-top: 15px;
+  color: rgb(89, 89, 89);
+}
+
 @media screen and (max-width: 600px) {
   .container {
     display: contents;
@@ -80,7 +91,6 @@ $bg_color: rgba(0, 128, 128, 0.462);
     }
     .field_input {
       width: -webkit-fill-available;
-      // width: 250px;
     }
     .box {
       padding: 40px;

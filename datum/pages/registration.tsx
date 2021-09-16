@@ -10,9 +10,9 @@ export default function Registration() {
     formState: { errors },
   } = useForm();
 
+  // program selection should be drop down instead of free text
   const createUser = async (data: any) => {
     const { name, email, program } = data;
-    console.log("data", data);
 
     try {
       await fetch("/api/createUser", {
@@ -23,9 +23,10 @@ export default function Registration() {
         },
       });
 
-      alert(
-        "Your details has been sent to the resposible team. The responsible team will contact you"
-      );
+      const output = document.getElementById("msg");
+      if (output)
+        output.innerHTML =
+          "Thank you. The responsible team will contact you soon";
     } catch (err) {
       console.log(err);
     }
@@ -55,7 +56,7 @@ export default function Registration() {
 
             <form onSubmit={handleSubmit(createUser)}>
               <div className={styles.category}>
-                <label>Full Name:</label>
+                <label>Full name:</label>
                 {errors.name && <span className={styles.mandatory}>*</span>}
               </div>
               <input
@@ -84,6 +85,9 @@ export default function Registration() {
               <div className={styles.category}>
                 <label>Program name:</label>
                 {errors.program && <span className={styles.mandatory}>*</span>}
+                <p className={styles.note}>
+                  *For future programs, we will contact you when it's ready
+                </p>
               </div>
               <input
                 id="program_id"
@@ -96,6 +100,7 @@ export default function Registration() {
 
               <div>
                 <button className={styles.submit}>Submit</button>
+                <div className={styles.msg} id="msg"></div>
               </div>
             </form>
           </div>

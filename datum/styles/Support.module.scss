@@ -94,9 +94,19 @@ $primary_color: teal;
   font-size: 1.5rem;
 }
 
-.rules_section li span {
-  color: red;
-  text-decoration: solid;
+.review {
+  margin-top: 15px;
+  a {
+    color: blue;
+  }
+}
+
+.rules_section li {
+  margin-top: 5px;
+  span {
+    color: red;
+    text-decoration: solid;
+  }
 }
 
 .btn_back {
@@ -129,6 +139,9 @@ $primary_color: teal;
         margin-top: 5px;
       }
     }
+    .review {
+      font-size: small;
+    }
   }
 }
 
@@ -155,6 +168,9 @@ $primary_color: teal;
       li {
         margin-top: 5px;
       }
+    }
+    .review {
+      font-size: x-small;
     }
   }
 }
